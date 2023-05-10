@@ -1,0 +1,118 @@
+@import "mixin";
+@import "var";
+
+body {
+    @include flex(center, center);
+    height: 100vh;
+    background-color: $c-purple-02;
+
+    @include bp(max-width, $bp-medium) {
+        height: 100%;
+    }
+}
+
+main {
+    width: 100%;
+
+    .card {
+        @include flex(center, space-between, column);
+        margin: 0 auto;
+        background-color: $c-background ;
+        border-radius: 40px;
+        max-width: 795px;
+        padding: $trim 60px;
+
+        .row {
+            width: 100%;
+            max-width: 170px;
+            min-height: $box-spacing;
+            background: $c-pink-light;
+            border-radius: 1000px;
+        }
+
+        .top,
+        .content,
+        .bottom {
+            width: 100%;
+        }
+
+        .top {
+            margin-top: $big;
+        }
+
+        .content {
+            @include flex(center, space-between);
+            margin: $big 0;
+
+            @include bp(max-width, $bp-medium) {
+                @include flex(flex-start, '', column, $trim);
+            }
+        }
+
+        .bottom {
+            @include flex(center, space-between);
+
+            input {
+                width: 100%;
+                max-width: 516px;
+                border: 0;
+                background-color: $c-input;
+                border-radius: $box-spacing + $small;
+                min-height: $large + 14px;
+                padding: 0 $trim;
+                @include text('', $c-purple, '', 500, 24px);
+                @include bp(max-width, $bp-medium) {
+                    max-width: 100%;
+                }
+            }
+
+            input::placeholder {
+                @include text('', $c-purple, '', 500, 24px);
+                line-height: $trim;
+            }
+
+            .right {
+                @include flex(center, space-between);
+                width: 100%;
+                max-width: 130px;
+
+                @include bp(max-width, $bp-medium) {
+                    max-width: 100%
+                }
+            }
+
+            @include bp(max-width, $bp-medium) {
+                @include flex(flex-start, '', column, $trim);
+            }
+        }
+
+        h1 {
+            @include text('', $c-purple, '', 700, 40px);
+            line-height: 48px;
+
+            span {
+                @include text('', $c-purple-02, '', 700, 40px);
+            }
+        }
+
+        p {
+            @include text('', $c-purple, '', 500, 25px);
+            line-height: $trim;
+        }
+
+        h2 {
+            @include text('', $c-purple, '', 700, 41px);
+            line-height: $large;
+        }
+
+        h3 {
+            @include text('', $c-purple, '', 500, 25px);
+            line-height: $trim;
+            margin-top: $trim-small;
+        }
+
+        @include bp(max-width, $bp-medium) {
+            max-width: 100%;
+        }
+    }
+}

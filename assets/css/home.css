@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+/* line 4, ../scss/home.scss */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #864293;
+}
+@media screen and (max-width: 768px) {
+  /* line 4, ../scss/home.scss */
+  body {
+    height: 100%;
+  }
+}
+
+/* line 14, ../scss/home.scss */
+main {
+  width: 100%;
+}
+/* line 17, ../scss/home.scss */
+main .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #FBF8FC;
+  border-radius: 40px;
+  max-width: 795px;
+  padding: 30px 60px;
+}
+/* line 25, ../scss/home.scss */
+main .card .row {
+  width: 100%;
+  max-width: 170px;
+  min-height: 20px;
+  background: #E5D8EA;
+  border-radius: 1000px;
+}
+/* line 33, ../scss/home.scss */
+main .card .top,
+main .card .content,
+main .card .bottom {
+  width: 100%;
+}
+/* line 39, ../scss/home.scss */
+main .card .top {
+  margin-top: 100px;
+}
+/* line 43, ../scss/home.scss */
+main .card .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+@media screen and (max-width: 768px) {
+  /* line 43, ../scss/home.scss */
+  main .card .content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+/* line 52, ../scss/home.scss */
+main .card .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 55, ../scss/home.scss */
+main .card .bottom input {
+  width: 100%;
+  max-width: 516px;
+  border: 0;
+  background-color: #F5EDF7;
+  border-radius: 25px;
+  min-height: 64px;
+  padding: 0 30px;
+  color: #372D3B;
+  font-weight: 500;
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  /* line 55, ../scss/home.scss */
+  main .card .bottom input {
+    max-width: 100%;
+  }
+}
+/* line 69, ../scss/home.scss */
+main .card .bottom input::placeholder {
+  color: #372D3B;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+}
+/* line 74, ../scss/home.scss */
+main .card .bottom .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 130px;
+}
+@media screen and (max-width: 768px) {
+  /* line 74, ../scss/home.scss */
+  main .card .bottom .right {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 52, ../scss/home.scss */
+  main .card .bottom {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+/* line 89, ../scss/home.scss */
+main .card h1 {
+  color: #372D3B;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+}
+/* line 93, ../scss/home.scss */
+main .card h1 span {
+  color: #864293;
+  font-weight: 700;
+  font-size: 40px;
+}
+/* line 98, ../scss/home.scss */
+main .card p {
+  color: #372D3B;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+}
+/* line 103, ../scss/home.scss */
+main .card h2 {
+  color: #372D3B;
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 50px;
+}
+/* line 108, ../scss/home.scss */
+main .card h3 {
+  color: #372D3B;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 15px;
+}
+@media screen and (max-width: 768px) {
+  /* line 17, ../scss/home.scss */
+  main .card {
+    max-width: 100%;
+  }
+}
